@@ -47,7 +47,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       app-header {
         @apply --layout-fixed-top;
         z-index: 1;
-        background-color: rgba(255, 255, 255, 0.95);
+        background-color: beige;
         --app-header-shadow: {
           box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.2);
           height: 10px;
@@ -187,6 +187,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         text-align: center;
         margin-top: 20px;
         line-height: 24px;
+        background-color: beige;
       }
 
       footer>a {
@@ -245,7 +246,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     -->
     <shop-cart-data id="cart" cart="{{cart}}" num-items="{{numItems}}" total="{{total}}"></shop-cart-data>
 
-    <app-header role="navigation" id="header" effects="waterfall" condenses reveals>
+    <app-header role="navigation" id="header" effects="waterfall" condenses fixed>
       <app-toolbar>
         <div class="left-bar-item">
           <paper-icon-button class="menu-btn" icon="menu" on-click="_toggleDrawer" aria-label="Categories">
@@ -314,8 +315,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <shop-404-warning name="404"></shop-404-warning>
     </iron-pages>
 
+    
     <footer>
-      <a href="https://www.polymer-project.org/2.0/toolbox/">Made by Polymer</a>
       <p>"All rights reserved"</p>
     </footer>
 
