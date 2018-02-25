@@ -9,20 +9,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
-<link rel="import" href="shop-button.html">
-<link rel="import" href="shop-image.html">
+<link rel="import" href="e-menu-button.html">
+<link rel="import" href="e-menu-image.html">
 
-<dom-module id="shop-home">
+<dom-module id="e-menu-home">
 
   <template>
 
-    <style include="shop-button">
+    <style include="e-menu-button">
 
       .image-link {
         outline: none;
       }
 
-      .image-link > shop-image::after {
+      .image-link > e-menu-image::after {
         display: block;
         content: '';
         position: absolute;
@@ -40,7 +40,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         outline: -webkit-focus-ring-color auto 5px;
       }
 
-      .image-link:focus > shop-image::after {
+      .image-link:focus > e-menu-image::after {
         opacity: 1;
       }
 
@@ -57,11 +57,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         width: 50%;
       }
 
-      shop-image {
+      e-menu-image {
         position: relative;
         height: 320px;
         overflow: hidden;
-        --shop-image-img: {
+        --e-menu-image-img: {
           position: absolute;
           top: 0;
           bottom: 0;
@@ -83,7 +83,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       @media (max-width: 767px) {
-        shop-image {
+        e-menu-image {
           height: 240px;
         }
 
@@ -91,8 +91,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           margin: 24px 0;
         }
         
-        .item:nth-of-type(3) > shop-button > a,
-        .item:nth-of-type(4) > shop-button > a {
+        .item:nth-of-type(3) > e-menu-button > a,
+        .item:nth-of-type(4) > e-menu-button > a {
           padding: 8px 24px;
         }
       }
@@ -103,12 +103,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <template strip-whitespace>
         <div class="item">
           <a class="image-link" href$="/list/[[item.name]]">
-            <shop-image src="[[item.image]]" alt="[[item.title]]" placeholder-img="[[item.placeholder]]"></shop-image>
+            <e-menu-image src="[[item.image]]" alt="[[item.title]]" placeholder-img="[[item.placeholder]]"></e-menu-image>
           </a>
           <h2>[[item.title]]</h2>
-          <shop-button>
+          <e-menu-button>
             <a aria-label$="[[item.title]] Shop Now" href$="/list/[[item.name]]">ORDER NOW</a>
-          </shop-button>
+          </e-menu-button>
         </div>
       </template>
     </dom-repeat>
@@ -119,7 +119,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     class ShopHome extends Polymer.Element {
 
-      static get is() { return 'shop-home'; }
+      static get is() { return 'e-menu-home'; }
 
       static get properties() { return {
 

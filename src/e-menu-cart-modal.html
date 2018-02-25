@@ -12,13 +12,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../bower_components/iron-overlay-behavior/iron-overlay-behavior.html">
-<link rel="import" href="shop-button.html">
+<link rel="import" href="e-menu-button.html">
 
-<dom-module id="shop-cart-modal">
+<dom-module id="e-menu-cart-modal">
 
   <template>
 
-    <style include="shop-button">
+    <style include="e-menu-button">
 
       :host {
         display: block;
@@ -92,12 +92,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <div class="label">Added to cart</div>
     </div>
     <div class="layout-horizontal">
-      <shop-button class="modal-button">
+      <e-menu-button class="modal-button">
         <a href="/cart" on-click="close" id="viewCartAnchor">View Cart</a>
-      </shop-button>
-      <shop-button class="modal-button">
+      </e-menu-button>
+      <e-menu-button class="modal-button">
         <a href="/checkout" on-click="close">Checkout</a>
-      </shop-button>
+      </e-menu-button>
     </div>
 
     <paper-icon-button icon="close" id="closeBtn" aria-label="Close dialog" on-click="close"></paper-icon-button>
@@ -109,7 +109,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     class ShopCartModal extends Polymer.mixinBehaviors(
       [Polymer.IronOverlayBehaviorImpl], Polymer.Element) {
 
-      static get is() { return 'shop-cart-modal'; }
+      static get is() { return 'e-menu-cart-modal'; }
 
       static get properties() { return {
         withBackdrop: {

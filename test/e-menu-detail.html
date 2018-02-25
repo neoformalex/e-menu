@@ -12,26 +12,26 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <html>
 <head>
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-  <title>shop-detail</title>
+  <title>e-menu-detail</title>
 
   <script src="../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
   <script src="../bower_components/web-component-tester/browser.js"></script>
 
   <!-- Import the element to test -->
   <link rel="import" href="../src/lazy-resources.html">
-  <link rel="import" href="../src/shop-detail.html">
+  <link rel="import" href="../src/e-menu-detail.html">
 
 </head>
 <body>
 
   <test-fixture id="basic">
     <template>
-       <shop-detail></shop-detail>
+       <e-menu-detail></e-menu-detail>
     </template>
   </test-fixture>
 
   <script>
-    suite('shop-detail tests', function() {
+    suite('e-menu-detail tests', function() {
       var detail;
 
       var item = {
@@ -70,25 +70,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         // Data bindings will stamp out new DOM asynchronously
         // so wait to check for updates
         flush(function() {
-          var image = detail.shadowRoot.querySelector('shop-image');
+          var image = detail.shadowRoot.querySelector('e-menu-image');
           assert.equal(item.largeImage, image.src);
           done();
         });
       });
 
 
-      test('failure should show shop-network-warning', function(done) {
-        var failureWarning = detail.shadowRoot.querySelector('shop-network-warning');
+      test('failure should show e-menu-network-warning', function(done) {
+        var failureWarning = detail.shadowRoot.querySelector('e-menu-network-warning');
         // Set failure property
         detail.failure = false;
         flush(function() {
-          assert.equal(getComputedStyle(failureWarning).display, 'none', 'shop-network-warning should be hidden when failure is false');
+          assert.equal(getComputedStyle(failureWarning).display, 'none', 'e-menu-network-warning should be hidden when failure is false');
           // Set failure property
           detail.failure = true;
           // Data bindings will stamp out new DOM asynchronously
           // so wait to check for updates
           flush(function() {
-            assert.notEqual(getComputedStyle(failureWarning).display, 'none', 'shop-network-warning should not be hidden when failure is true');
+            assert.notEqual(getComputedStyle(failureWarning).display, 'none', 'e-menu-network-warning should not be hidden when failure is true');
             done();
           });
         });

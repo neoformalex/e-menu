@@ -1,11 +1,11 @@
 {
   "entrypoint": "index.html",
-  "shell": "src/shop-app.html",
+  "shell": "src/e-menu-app.html",
   "fragments": [
-    "src/shop-list.html",
-    "src/shop-detail.html",
-    "src/shop-cart.html",
-    "src/shop-checkout.html",
+    "src/e-menu-list.html",
+    "src/e-menu-detail.html",
+    "src/e-menu-cart.html",
+    "src/e-menu-checkout.html",
     "src/lazy-resources.html"
   ],
   "sources": [

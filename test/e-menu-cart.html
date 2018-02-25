@@ -12,25 +12,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <html>
 <head>
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-  <title>shop-cart</title>
+  <title>e-menu-cart</title>
 
   <script src="../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
   <script src="../bower_components/web-component-tester/browser.js"></script>
 
   <!-- Import the element to test -->
-  <link rel="import" href="../src/shop-cart.html">
+  <link rel="import" href="../src/e-menu-cart.html">
 
 </head>
 <body>
 
   <test-fixture id="basic">
     <template>
-       <shop-cart></shop-cart>
+       <e-menu-cart></e-menu-cart>
     </template>
   </test-fixture>
 
   <script>
-    suite('shop-cart tests', function() {
+    suite('e-menu-cart tests', function() {
       var cart;
 
       var cartData = [
@@ -72,7 +72,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         // Data bindings will stamp out new DOM asynchronously
         // so wait to check for updates
         flush(function() {
-          var items = cart.shadowRoot.querySelectorAll('shop-cart-item');
+          var items = cart.shadowRoot.querySelectorAll('e-menu-cart-item');
           assert.equal(Object.keys(cart.cart).length, items.length);
           done();
         });

@@ -9,15 +9,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
-<link rel="import" href="shop-button.html">
-<link rel="import" href="shop-common-styles.html">
-<link rel="import" href="shop-form-styles.html">
+<link rel="import" href="e-menu-button.html">
+<link rel="import" href="e-menu-common-styles.html">
+<link rel="import" href="e-menu-form-styles.html">
 
-<dom-module id="shop-cart">
+<dom-module id="e-menu-cart">
 
   <template>
 
-    <style include="shop-common-styles shop-button shop-form-styles">
+    <style include="e-menu-common-styles e-menu-button e-menu-form-styles">
 
       .list {
         margin: 40px 0;
@@ -49,21 +49,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       </div>
       <div class="subsection" visible$="[[_hasItems]]">
         <header>
-          <h1>Your Cart</h1>
+          <h1>Your Order</h1>
           <span>([[_getPluralizedQuantity(cart.length)]])</span>
         </header>
         <div class="list">
           <dom-repeat items="[[cart]]" as="entry">
             <template>
-              <shop-cart-item entry="[[entry]]"></shop-cart-item>
+              <e-menu-cart-item entry="[[entry]]"></e-menu-cart-item>
             </template>
           </dom-repeat>
         </div>
         <div class="checkout-box">
           Total: <span class="subtotal">[[_formatTotal(total)]]</span>
-          <shop-button responsive>
+          <e-menu-button responsive>
             <a href="/checkout">Checkout</a>
-          </shop-button>
+          </e-menu-button>
         </div>
       </div>
     </div>
@@ -74,7 +74,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     class ShopCart extends Polymer.Element {
 
-      static get is() { return 'shop-cart'; }
+      static get is() { return 'e-menu-cart'; }
 
       static get properties() { return {
 
@@ -110,7 +110,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         if (visible) {
           // Notify the section's title
           this.dispatchEvent(new CustomEvent('change-section', {
-            bubbles: true, composed: true, detail: { title: 'Your cart' }}));
+            bubbles: true, composed: true, detail: { title: 'Your order' }}));
         }
       }
 

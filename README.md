@@ -11,13 +11,13 @@ Install [polymer-cli](https://github.com/Polymer/polymer-cli):
 ### Setup
 
     # Using CLI
-    mkdir shop
-    cd shop
-    polymer init shop
+    mkdir e-menu
+    cd e-menu
+    polymer init e-menu
 
     # Or cloning direct from GitHub
-    git clone https://github.com/Polymer/shop.git
-    cd shop
+    git clone https://github.com/Polymer/e-menu.git
+    cd e-menu
     bower install
 
 ## Start the development server

@@ -10,9 +10,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
-<link rel="import" href="shop-ripple-container.html">
+<link rel="import" href="e-menu-ripple-container.html">
 
-<dom-module id="shop-tab">
+<dom-module id="e-menu-tab">
   <template strip-whitespace>
     <style>
       [hidden] {
@@ -32,21 +32,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         right: 0;
         bottom: 0;
         left: 0;
-        @apply --shop-tab-overlay;
+        @apply --e-menu-tab-overlay;
       }
 
-      :host(.shop-tabs-overlay-static-above) #overlay {
+      :host(.e-menu-tabs-overlay-static-above) #overlay {
         display: block;
       }
     </style>
     <div id="overlay"></div>
-    <shop-ripple-container>
+    <e-menu-ripple-container>
       <slot></slot>
-    </shop-ripple-container>
+    </e-menu-ripple-container>
   </template>
   <script>
     class ShopTab extends Polymer.Element {
-      static get is() { return 'shop-tab'; }
+      static get is() { return 'e-menu-tab'; }
     }
 
     customElements.define(ShopTab.is, ShopTab);
