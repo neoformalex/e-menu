@@ -1,8 +1,8 @@
 {
-  "name": "shop",
-  "version": "2.0.0",
+  "name": "e-menu",
+  "version": "0.5.0",
   "authors": [
-    "The Polymer Authors"
+    "The Dream Team"
   ],
   "private": true,
   "dependencies": {
