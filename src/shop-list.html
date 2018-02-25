@@ -103,6 +103,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <span>[[_getPluralizedQuantity(category.items.length)]]</span>
     </header>
 
+    <paper-search-bar query="{{query}}" placeholder="Search through [[titleName]]" on-paper-search-search="search">
+    </paper-search-bar>
     <ul class="grid" hidden$="[[failure]]">
       <dom-repeat items="[[_getListItems(category.items)]]" initial-count="4">
         <template>
