@@ -21,7 +21,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <template>
 
     <style include="e-menu-common-styles">
-
       .hero-image {
         position: relative;
         height: 320px;
@@ -37,7 +36,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           left: -9999px;
           right: -9999px;
           max-width: none;
-        };
+        }
+        ;
       }
 
       .grid {
@@ -58,7 +58,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       .grid a {
-        display:block;
+        display: block;
         text-decoration: none;
       }
 
@@ -67,36 +67,28 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           display: none;
         }
 
-        .grid  li {
+        .grid li {
           -webkit-flex-basis: 100%;
           flex-basis: 100%;
           max-width: 100%;
         }
+        h1 {
+          padding-top: 20px;
+        }
       }
-
     </style>
 
     <!--
       app-route provides the name of the category.
     -->
-    <app-route
-        route="[[route]]"
-        pattern="/:category"
-        data="{{routeData}}"></app-route>
+    <app-route route="[[route]]" pattern="/:category" data="{{routeData}}"></app-route>
 
     <!--
       e-menu-category-data provides the category data for a given category name.
     -->
-    <e-menu-category-data
-        id="categoryData"
-        category-name="[[routeData.category]]"
-        category="{{category}}"
-        failure="{{failure}}"></e-menu-category-data>
+    <e-menu-category-data id="categoryData" category-name="[[routeData.category]]" category="{{category}}" failure="{{failure}}"></e-menu-category-data>
 
-    <e-menu-image
-        alt="[[category.title]]"
-        src="[[category.image]]"
-        placeholder-img="[[category.placeholder]]" class="hero-image"></e-menu-image>
+    <e-menu-image alt="[[category.title]]" src="[[category.image]]" placeholder-img="[[category.placeholder]]" class="hero-image"></e-menu-image>
 
     <header>
       <h1>[[category.title]]</h1>
@@ -109,7 +101,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <dom-repeat items="[[_getListItems(category.items)]]" initial-count="4">
         <template>
           <li>
-            <a href$="[[_getItemHref(item)]]"><e-menu-list-item item="[[item]]"></e-menu-list-item></a>
+            <a href$="[[_getItemHref(item)]]">
+              <e-menu-list-item item="[[item]]"></e-menu-list-item>
+            </a>
           </li>
         </template>
       </dom-repeat>
@@ -119,44 +113,46 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       e-menu-network-warning shows a warning message when the items can't be rendered due
       to network conditions.
     -->
-    <e-menu-network-warning
-        hidden$="[[!failure]]"
-        offline="[[offline]]"
-        on-try-reconnect="_tryReconnect"></e-menu-network-warning>
+    <e-menu-network-warning hidden$="[[!failure]]" offline="[[offline]]" on-try-reconnect="_tryReconnect"></e-menu-network-warning>
 
   </template>
 
   <script>
+    class EmenuList extends Polymer.Element {
 
-    class ShopList extends Polymer.Element {
+      static get is() {
+        return 'e-menu-list';
+      }
 
-      static get is() { return 'e-menu-list'; }
+      static get properties() {
+        return {
 
-      static get properties() { return {
+          category: Object,
 
-        category: Object,
+          route: Object,
 
-        route: Object,
+          routeData: Object,
 
-        routeData: Object,
+          visible: {
+            type: Boolean,
+            value: false
+          },
 
-        visible: {
-          type: Boolean,
-          value: false
-        },
+          offline: {
+            type: Boolean,
+            observer: '_offlineChanged'
+          },
 
-        offline: {
-          type: Boolean,
-          observer: '_offlineChanged'
-        },
+          failure: Boolean
 
-        failure: Boolean
+        }
+      }
 
-      }}
-
-      static get observers() { return [
-        '_categoryChanged(category, visible)'
-      ]}
+      static get observers() {
+        return [
+          '_categoryChanged(category, visible)'
+        ]
+      }
 
       connectedCallback() {
         super.connectedCallback();
@@ -170,7 +166,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       _getListItems(items) {
         // Return placeholder items when the items haven't loaded yet.
-        return items || [{},{},{},{},{},{},{},{},{},{}];
+        return items || [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}];
       }
 
       _getItemHref(item) {
@@ -184,7 +180,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           return '';
         }
         let pluralizedQ = quantity === 1 ? 'item' : 'items';
-        return  '(' + quantity + ' ' + pluralizedQ + ')';
+        return '(' + quantity + ' ' + pluralizedQ + ')';
       }
 
       _categoryChanged(category, visible) {
@@ -196,14 +192,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             if (category) {
               // Notify the category and the page's title
               this.dispatchEvent(new CustomEvent('change-section', {
-                bubbles: true, composed: true, detail: {
+                bubbles: true,
+                composed: true,
+                detail: {
                   category: category.name,
                   title: category.title,
                   image: this.baseURI + category.image
-                }}));
+                }
+              }));
             } else {
               this.dispatchEvent(new CustomEvent('show-invalid-url-warning', {
-                bubbles: true, composed: true}));
+                bubbles: true,
+                composed: true
+              }));
             }
           });
       }
@@ -220,8 +221,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     }
 
-    customElements.define(ShopList.is, ShopList);
-
+    customElements.define(EmenuList.is, EmenuList);
   </script>
 
 </dom-module>

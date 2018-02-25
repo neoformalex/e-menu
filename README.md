@@ -30,7 +30,7 @@ Install [polymer-cli](https://github.com/Polymer/polymer-cli):
 
 ## Build
 
-Build presets provide an easy way to define common build configurations in your `polymer.json` file. There are 3 build presets we put in `polymer.json` file in Shop:
+Build presets provide an easy way to define common build configurations in your `polymer.json` file. There are 3 build presets we put in `polymer.json` file in E-menu:
 
 **es5-bundled**
 

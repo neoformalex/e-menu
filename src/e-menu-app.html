@@ -36,7 +36,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         padding-bottom: 64px;
         min-height: 100vh;
         --app-primary-color: #000000;
-        --app-secondary-color: #000158;
+        --app-secondary-color: #669999;
         --app-accent-color: rgb(95, 95, 95);
         --paper-button-ink-color: var(--app-accent-color);
         --paper-icon-button-ink-color: var(--app-accent-color);
@@ -66,11 +66,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       .logo a {
-        font-size: 16px;
+        font-size: 25px;
         font-weight: 600;
-        letter-spacing: 0.3em;
+        letter-spacing: 0.1em;
         color: var(--app-primary-color);
         text-decoration: none;
+        text-shadow: 3px 2px var(--app-secondary-color);
         /* required for IE 11, so this <a> can receive pointer events */
         display: inline-block;
         pointer-events: auto;
@@ -128,10 +129,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         display: inline-block;
         outline: none;
         padding: 9px 5px;
-        font-size: 13px;
+        font-size: 16px;
         font-weight: 500;
         text-decoration: none;
         color: var(--app-primary-color);
+        text-transform: uppercase;
       }
 
       .cart-badge {
@@ -259,13 +261,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <div class="right-bar-item">
         </div>
         <div class="logo" main-title>
-          <a href="/" aria-label="MAIN E-MENU">MAIN E-MENU
-            <iron-icon src="../images/logo-icon-512.png"></iron-icon>
+          <a href="/" aria-label="MAIN E-MENU">E-MENU
           </a>
         </div>
         <div class="cart-btn-container">
           <a href="/cart" tabindex="-1">
-            <paper-icon-button icon="shopping-cart" aria-label$="Shopping cart: [[_computePluralizedQuantity(numItems)]]"></paper-icon-button>
+            <paper-icon-button icon="shopping-cart" aria-label$="Emenuping cart: [[_computePluralizedQuantity(numItems)]]"></paper-icon-button>
           </a>
           <div class="cart-badge" aria-hidden="true" hidden$="[[!numItems]]">[[numItems]]</div>
         </div>
@@ -334,7 +335,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     // performance logging
     window.performance && performance.mark && performance.mark('e-menu-app - before register');
 
-    class ShopApp extends Polymer.Element {
+    class EmenuApp extends Polymer.Element {
 
       static get is() {
         return 'e-menu-app';
@@ -599,7 +600,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     }
 
-    customElements.define(ShopApp.is, ShopApp);
+    customElements.define(EmenuApp.is, EmenuApp);
   </script>
 
 </dom-module>

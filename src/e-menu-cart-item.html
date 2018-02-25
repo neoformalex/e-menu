@@ -195,7 +195,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <e-menu-md-decorator aria-hidden="true"></e-menu-md-decorator>
           </e-menu-select>
         </div>
-        <div class="size">Size: <span>[[entry.size]]</span></div>
+        <div class="size">Comment: <span>[[entry.size]]</span></div>
         <div class="price">[[_formatPrice(entry.item.price)]]</div>
 
         <!--
@@ -209,7 +209,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <script>
 
-    class ShopCartItem extends Polymer.Element {
+    class EmenuCartItem extends Polymer.Element {
 
       static get is() { return 'e-menu-cart-item'; }
 
@@ -242,7 +242,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     }
 
-    customElements.define(ShopCartItem.is, ShopCartItem);
+    customElements.define(EmenuCartItem.is, EmenuCartItem);
 
   </script>
 
