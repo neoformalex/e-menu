@@ -19,6 +19,7 @@ Install [polymer-cli](https://github.com/Polymer/polymer-cli):
     git clone https://github.com/neoformalex/e-menu.git
     cd e-menu
     bower install
+    bower install paper-search --allow-root option
 
 ## Start the development server
 
