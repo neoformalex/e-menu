@@ -95,10 +95,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <span>[[_getPluralizedQuantity(category.items.length)]]</span>
     </header>
 
-    <paper-search-bar query="{{query}}" placeholder="Search through [[titleName]]" on-paper-search-search="search">
+    <paper-search-bar query="{{query}}" placeholder="Search through" on-paper-search-search="search" type="text" value="{{filterVal::input}}">
     </paper-search-bar>
     <ul class="grid" hidden$="[[failure]]">
-      <dom-repeat items="[[_getListItems(category.items)]]" initial-count="4">
+      <dom-repeat items="[[_getListItems(category.items)]]" initial-count="4" filter="{{_filter(filterVal)}}">
         <template>
           <li>
             <a href$="[[_getItemHref(item)]]">
@@ -152,6 +152,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         return [
           '_categoryChanged(category, visible)'
         ]
+      }
+
+      _filter(val) {
+        return function (item) {
+          if (!val) return true;
+          if (!item) return false;
+          return (item.title.toLowerCase() && ~item.title.toLowerCase().indexOf(val));
+        };
       }
 
       connectedCallback() {
