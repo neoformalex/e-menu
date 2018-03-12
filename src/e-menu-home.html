@@ -9,6 +9,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/paper-dialog-behavior/paper-dialog-behavior.html">
 <link rel="import" href="e-menu-button.html">
 <link rel="import" href="e-menu-image.html">
 
@@ -110,11 +111,29 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <a aria-label$="[[item.title]] Emenu Now" href$="/list/[[item.name]]">ORDER NOW</a>
           </e-menu-button>
         </div>
+        
+
+ <paper-button on-tap="openDialog"></paper-button>
+ <paper-dialog id="dialog">
+    <h3>text</h3>
+    <div class="buttons">
+      <paper-button dialog-confirm>Close</paper-button>
+    </div>
+ </paper-dialog>
+
       </template>
     </dom-repeat>
 
   </template>
-
+  <script>
+      Polymer({
+        is: 'e-menu-home',
+  
+        openDialog: function() {
+          this.$.dialog.open();
+        }
+      });
+    </script>
   <script>
 
     class EmenuHome extends Polymer.Element {
@@ -140,11 +159,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             bubbles: true, composed: true, detail: {title: 'Home'}}));
         }
       }
+      _openDialog() {
+      console.log("fuck you");            // The function returns the product of p1 and p2
+      modal.open()
+    }
+      
 
     }
 
     customElements.define(EmenuHome.is, EmenuHome);
-
+    function _openDialog() {
+      console.log("fuck you");            // The function returns the product of p1 and p2
+    }
   </script>
 
 </dom-module>

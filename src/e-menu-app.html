@@ -21,6 +21,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/iron-pages/iron-pages.html">
 <link rel="import" href="../bower_components/iron-selector/iron-selector.html">
 <link rel="import" href="e-menu-category-data.html">
+
+<link rel="import" href="../bower_components/paper-dialog/paper-dialog.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
 <!-- Since 'home' is the default route, eagerly load it. -->
 <link rel="import" href="e-menu-home.html">
 
@@ -323,6 +326,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 
     <footer>
+        <paper-dialog>
+            <h2>Header</h2>
+            <paper-dialog-scrollable>
+              Lorem ipsum...
+            </paper-dialog-scrollable>
+            <div class="buttons">
+              <paper-button dialog-dismiss>Cancel</paper-button>
+              <paper-button dialog-confirm autofocus>Accept</paper-button>
+            </div>
+          </paper-dialog>
       <p>"All rights reserved"</p>
     </footer>
 
