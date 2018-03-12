@@ -16,7 +16,7 @@ Install [polymer-cli](https://github.com/Polymer/polymer-cli):
     polymer init e-menu
 
     # Or cloning direct from GitHub
-    git clone https://github.com/Polymer/e-menu.git
+    git clone https://github.com/neoformalex/e-menu.git
     cd e-menu
     bower install
 
