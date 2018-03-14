@@ -233,7 +233,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
               // Reset the select menus.
               this.$.quantitySelect.value = '1';
-              this.$.sizeSelect.value = 'M';
 
               this.dispatchEvent(new CustomEvent('change-section', {
                 bubbles: true, composed: true, detail: {
@@ -261,8 +260,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         this.dispatchEvent(new CustomEvent('add-cart-item', {
           bubbles: true, composed: true, detail: {
             item: this.item,
-            quantity: parseInt(this.$.quantitySelect.value, 10),
-            size: this.$.sizeSelect.value
+            quantity: parseInt(this.$.quantitySelect.value, 10)
           }}));
       }
 
