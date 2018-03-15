@@ -31,6 +31,7 @@
     },
     "html": {
       "minify": true
-    }
+    },
+    "addServiceWorker": true
   }]
 }
