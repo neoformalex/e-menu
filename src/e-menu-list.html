@@ -15,6 +15,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="e-menu-common-styles.html">
 <link rel="import" href="e-menu-image.html">
 <link rel="import" href="e-menu-list-item.html">
+<link rel="import" href="e-menu-search-bar.html">
 
 <dom-module id="e-menu-list">
 
@@ -75,7 +76,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         h1 {
           padding-top: 20px;
         }
-      }
+        }
     </style>
 
     <!--
@@ -95,8 +96,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <span>The number of all items in the list [[category.items.length]]</span>
     </header>
 
-    <paper-search-bar query="{{query}}" placeholder="Search through" on-paper-search-search="search">
-    </paper-search-bar>
+      <e-menu-search-bar query="{{query}}" placeholder="Search through" on-paper-search-search="search" hide-filter-button>
+      </e-menu-search-bar>
     <ul class="grid" hidden$="[[failure]]">
       <dom-repeat items="[[_getListItems(category.items)]]" initial-count="4" filter="{{_filter(query)}}">
         <template>
@@ -153,7 +154,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           '_categoryChanged(category, visible)'
         ]
       }
-      
+
       _filter(val) {
         var i = [];
         return function (item) {
@@ -173,8 +174,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         this.isAttached = false;
       }
 
-      printNumberOfItems(i)
-      {
+      printNumberOfItems(i) {
         console.log(i);
       }
 
