@@ -5,7 +5,6 @@
     "category":"main_dishes",
     "price":8.90,
     "description":"A grilled beef steak meal which is usually served with fries or a salad for garnish as well as sauces of choice.",
-    "ingredients":"Beef meat, carrots, broccoli and other optional add-ons.",
     "image":"data/images/10-15068B.jpg",
     "largeImage":"data/images/10-15068A.jpg"
   },
@@ -15,7 +14,6 @@
     "category":"main_dishes",
     "price":8.90,
     "description":"A grilled pork steak meal which is usually served with fries or a salad for garnish as well as sauce of choice.",
-    "ingredients":"Pork meat, tomatoes, lettuce, potatoes and other optional add-ons.",
     "image":"data/images/10-14154B.jpg",
     "largeImage":"data/images/10-14154A.jpg"
   },
@@ -25,7 +23,6 @@
     "category":"main_dishes",
     "price":8.90,
     "description":"Grilled chicken souvlaki meal served in a pitta or on a plate. With additional fries or salad and sauces of choice.",
-    "ingredients":"Chicken meat, potatoes, optional sauce and salad.",
     "image":"data/images/10-14157B.jpg",
     "largeImage":"data/images/10-14157A.jpg"
   },
