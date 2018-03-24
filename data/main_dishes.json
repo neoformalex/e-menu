@@ -77,6 +77,7 @@
     "category":"main_dishes",
     "price":9.40,
     "description":"Grilled pork souvlaki meal served in a pitta or on a plate. With additional fries or salad for garnish and sauces of choice.",
+    "ingredients":"sesame, chicken, broccoli",
     "image":"data/images/10-14152B.jpg",
     "largeImage":"data/images/10-14152A.jpg"
   },
