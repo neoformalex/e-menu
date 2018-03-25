@@ -5,7 +5,7 @@
     "category":"main_dishes",
     "price":8.90,
     "description":"A grilled beef steak meal which is usually served with fries or a salad for garnish as well as sauces of choice.",
-    "ingredients":"",
+    "ingredients":"Beef meat, potatoes, salad( tomatoes, cucumbers etc.), sauce..",
     "image":"data/images/10-15068B.jpg",
     "largeImage":"data/images/10-15068A.jpg"
   },
@@ -15,7 +15,7 @@
     "category":"main_dishes",
     "price":8.90,
     "description":"A grilled pork steak meal which is usually served with fries or a salad for garnish as well as sauce of choice.",
-    "ingredients":"",
+    "ingredients":"Pork meat, potatoes, salad( tomatoes, cucumbers etc.), sauce..",
     "image":"data/images/10-14154B.jpg",
     "largeImage":"data/images/10-14154A.jpg"
   },
