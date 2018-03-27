@@ -12,13 +12,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="e-menu-button.html">
 <link rel="import" href="e-menu-common-styles.html">
 <link rel="import" href="e-menu-form-styles.html">
+<link rel="import" href="../bower_components/paper-dialog/paper-dialog.html">
 
 <dom-module id="e-menu-cart">
 
   <template>
 
     <style include="e-menu-common-styles e-menu-button e-menu-form-styles">
-
       .list {
         margin: 40px 0;
       }
@@ -40,12 +40,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         }
 
       }
-
     </style>
 
     <div class="main-frame">
       <div class="subsection" visible$="[[!_hasItems]]">
-        <p class="empty-cart">Your <iron-icon icon="shopping-cart"></iron-icon> is empty.</p>
+        <p class="empty-cart">Your
+          <iron-icon icon="shopping-cart"></iron-icon> is empty.</p>
       </div>
       <div class="subsection" visible$="[[_hasItems]]">
         <header>
@@ -60,38 +60,63 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           </dom-repeat>
         </div>
         <div class="checkout-box">
-          Total: <span class="subtotal">[[_formatTotal(total)]]</span>
+          Total:
+          <span class="subtotal">[[_formatTotal(total)]]</span>
           <e-menu-button responsive>
-            <a href="/checkout">Checkout</a>
+            <input type="button" on-click="_submit" value="Place Order">
           </e-menu-button>
         </div>
       </div>
     </div>
+    <paper-dialog id="modal" modal>
+      <dom-repeat items="[[nameArr]]" as="name">
+          <template>
+            <p>[[nameArr]]</p>
+            </br>
+          </template>
+        </dom-repeat>
+      </dom-repeat>
+      <div class="buttons">
+        <paper-button dialog-confirm autofocus>Tap me to close</paper-button>
+      </div>
+    </paper-dialog>
   </template>
 
   <script>
-
     class EmenuCart extends Polymer.Element {
 
-      static get is() { return 'e-menu-cart'; }
+      static get is() {
+        return 'e-menu-cart';
+      }
 
-      static get properties() { return {
+      ready() {
+        super.ready();
+      }
 
-        total: Number,
+      static get properties() {
+        return {
 
-        cart: Array,
+          total: Number,
 
-        visible: {
-          type: Boolean,
-          observer: '_visibleChanged'
-        },
+          cart: Array,
 
-        _hasItems: {
-          type: Boolean,
-          computed: '_computeHasItem(cart.length)'
+          visible: {
+            type: Boolean,
+            observer: '_visibleChanged'
+          },
+
+          _hasItems: {
+            type: Boolean,
+            computed: '_computeHasItem(cart.length)'
+          },
+
+          totalMoney: Number,
+
+          nameArr: Array,
+
+          quantityArr: Array
         }
-
-      }}
+      }
 
       _formatTotal(total) {
         return isNaN(total) ? '' : '$' + total.toFixed(2);
@@ -109,14 +134,37 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         if (visible) {
           // Notify the section's title
           this.dispatchEvent(new CustomEvent('change-section', {
-            bubbles: true, composed: true, detail: { title: 'Your order' }}));
+            bubbles: true,
+            composed: true,
+            detail: {
+              title: 'Your order'
+            }
+          }));
         }
+      }
+      _submit() {
+        var totalMoney = 0.0;
+        var allItemsName = [];
+        var allItemsQuantity = [];
+        var i = 0;
+        this.cart.forEach(element => {
+          totalMoney = totalMoney + (parseFloat(element.quantity) * parseFloat(element.item.price))
+          allItemsName.push(element.item.title);
+          allItemsQuantity.push(element.quantity);
+          i++;
+        });
+        this.nameArr = allItemsName;
+        this.quantityArr = allItemsQuantity;
+        this._openDialog();
+      }
+      _openDialog() {
+        this.$.modal.open();
       }
 
     }
 
-    customElements.define(EmenuCart.is, EmenuCart);
 
+    customElements.define(EmenuCart.is, EmenuCart);
   </script>
 
 </dom-module>
