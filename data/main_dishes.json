@@ -4,7 +4,7 @@
     "title":"Grilled Beef Steak Meal",
     "category":"main_dishes",
     "price":8.90,
-    "description":"A grilled beef steak meal which is usually served with fries or a salad for garnish as well as sauces of choice.",
+    "description":"Grilled Beef steak meal served with garnish and sauces based on customer's choice.",
     "ingredients":"Onions, Garlic, Olive Oil, Vinegar, Soy Sauce, Rosemary, Mustard, Salt, Pepper, Grilled Beef Meat",
     "image":"data/images/10-15068B.jpg",
     "largeImage":"data/images/10-15068A.jpg"
@@ -14,7 +14,7 @@
     "title":"Grilled Pork Steak Meal",
     "category":"main_dishes",
     "price":8.90,
-    "description":"A grilled pork steak meal which is usually served with fries or a salad for garnish as well as sauce of choice.",
+    "description":"Grilled Pork steak meal served with garnish and sauces based on customer's choice.",
     "ingredients":"Light Soy Sauce, Vegetable Oil, Lemon Pepper Seasoning, Minced Garlic, Boneless Loin Chops",
     "image":"data/images/10-14154B.jpg",
     "largeImage":"data/images/10-14154A.jpg"
@@ -24,7 +24,7 @@
     "title":"Chicken Souvlaki Meal",
     "category":"main_dishes",
     "price":8.90,
-    "description":"Grilled chicken souvlaki meal served in a pitta or on a plate. With additional fries or salad and sauces of choice.",
+    "description":"Grilled Chicken Souvlaki meal served with garnish and sauces based on customer's choice.",
     "ingredients":"Olive Oil, Lemon Juice, Minced Garlic Cloves, Dried Oregano, Salt, Boneless Chicken Breast Halves, Greek Yogurt, Cucumber, White Vinegar",
     "image":"data/images/10-14157B.jpg",
     "largeImage":"data/images/10-14157A.jpg"
@@ -34,7 +34,7 @@
     "title":"Pepperoni Pizza",
     "category":"main_dishes",
     "price":9.20,
-    "description":"The classical and well known Pepperoni Pizza served casually with drink of choice.",
+    "description":"Pepperoni Pizza meal served with garnish and sauces based on customer's choice.",
     "ingredients":"Pepperoni, tomato sauce, parmesan cheese, olive oil, italian seasoning, cornmeal, onions..",
     "image":"data/images/10-15041B.jpg",
     "largeImage":"data/images/10-15041A.jpg"
@@ -44,7 +44,7 @@
     "title":"Margarita Pizza",
     "category":"main_dishes",
     "price":9.20,
-    "description":"Margarita Pizza served casually with drink of choice.",
+    "description":"Margarita Pizza meal served with garnish and sauces based on customer's choice.",
     "ingredients":"Olive Oil, Roasted Garlic, Tomato Sauce, Mozarella Cheese, Basil, Ground Pepper",
     "image":"data/images/10-14133B.jpg",
     "largeImage":"data/images/10-14133A.jpg"
@@ -54,7 +54,7 @@
     "title":"Fried Chicken Salad",
     "category":"main_dishes",
     "price":8.90,
-    "description":"This salad consists of fried chicken strips with fresh tomatoes and a tartar sauce for dressing.",
+    "description":"Fried Chicken Salad meal served with garnish and sauces based on customer's choice.",
     "ingredients":"Mayonnaise, Buttermilk, Whole-Grain Mustard, Dried Italian Seasoning, Cayenne, Lemon Juice, Fried Chicken Pieces, Parsley, Green Onions, Black Pepper",
     "image":"data/images/10-14160B.jpg",
     "largeImage":"data/images/10-14160A.jpg"
@@ -64,7 +64,7 @@
     "title":"Salmon Fillet Meal",
     "category":"main_dishes",
     "price":9.40,
-    "description":"This dish consists of perfectly steam coocked salmon fillets served along with a tomato sauce and broccoli for garnish.",
+    "description":"Salmon Fillet meal served with garnish and sauces based on customer's choice.",
     "ingredients":"Skinless Salmon Fillet, Black Pepper, Olive Oil, Garlic Cloves, Lemon Juice, Butter, Honey, Parsley",
     "image":"data/images/10-14153B.jpg",
     "largeImage":"data/images/10-14153A.jpg"
@@ -74,7 +74,7 @@
     "title":"Lamb Chops Meal",
     "category":"main_dishes",
     "price":9.40,
-    "description":"Lamb Chops served with green beans and small decorative patatoes for garnish.",
+    "description":"Lamb Chops meal served with garnish and sauces based on customer's choice.",
     "ingredients":"Crushed Garlic Cloves, Rosemary Leaves, Thyme Leaves, Cayenne Pepper, Sea Salt, Olive Oil, Lamb Chops",
     "image":"data/images/10-14158B.jpg",
     "largeImage":"data/images/10-14158A.jpg"
@@ -84,7 +84,7 @@
     "title":"Pork Souvlaki Meal",
     "category":"main_dishes",
     "price":9.40,
-    "description":"Grilled pork souvlaki meal served in a pitta or on a plate. With additional fries or salad for garnish and sauces of choice.",
+    "description":"Pork Souvlaki meal served with garnish and sauces based on customer's choice.",
     "ingredients":"Boneless Pork Loin, Lemon Juice, Olive Oil, Garlic Cloves, Dried Oregano, Salt, Pepper, Tzatziki, Greek pita breads",
     "image":"data/images/10-14152B.jpg",
     "largeImage":"data/images/10-14152A.jpg"
@@ -94,7 +94,7 @@
     "title":"Italian Chicken Wrap Meal",
     "category":"main_dishes",
     "price":8.20,
-    "description":"Italian chicken wrap meal consisting of stir fry vegetable blend, grilled chicken, italian sauce dressing and parmesan cheese served with fries or a salad for garnish based on choice.",
+    "description":"Italian Chicken Wrap meal served with garnish and sauces based on customer's choice.",
     "ingredients":"Stir Fry Vegetables, Grilled Chicken Strips, Italian Salad Dressing, Parmesan Cheese, Tortillas",
     "image":"data/images/10-14155B.jpg",
     "largeImage":"data/images/10-14155A.jpg"
@@ -104,7 +104,7 @@
     "title":"Spaghetti With Meat Balls Meal",
     "category":"main_dishes",
     "price":9.40,
-    "description":"Spaghetti meat balls meal served with grinded mozzarella cheese on top and coliander leaves along with tomato sauce.",
+    "description":"Spaghetti with Meat Balls meal served with garnish and sauces based on customer's choice.",
     "ingredients":"Ground Beef, Bread Crumbs, Parsley, Parmesan, Black Pepper, Garlic Powder, Eggs(s), Tomato Sauce, Olive Oil",
     "image":"data/images/10-14159B.jpg",
     "largeImage":"data/images/10-14159A.jpg"
@@ -114,7 +114,7 @@
     "title":"Terriyaki Chicken Pizza",
     "category":"main_dishes",
     "price":9.20,
-    "description":"Terriyaki Chicken Pizza consists of terriyaki sauce, chicken, bacon and mozzarella cheese.",
+    "description":"Terriyaki Chicken Pizza meal served with garnish and sauces based on customer's choice.",
     "ingredients":"Prebaked Pizza Crust, Teriyaki Sauce, Chopped Chicken pieces, Cooked Crumbled Bacon, Mozzarella Cheese",
     "image":"data/images/10-14146B.jpg",
     "largeImage":"data/images/10-14146A.jpg"
@@ -124,7 +124,7 @@
     "title":"Chinese Sesame Chicken Meal",
     "category":"main_dishes",
     "price":9.50,
-    "description":"Chinese sesame chicken meal with perfectly cooked chicken pieces covered in sweet and sour sauce and sesame. Served with rice and green vegetables for garnish.",
+    "description":"Chinese Sesame Chicken meal served with garnish and sauces based on customer's choice.",
     "ingredients":"Soy Sauce, Cornstarch, Dry Sherry, Vegetable Oil, Sesame Oil, Chicken Breast Meat, Chicken Broth, White Vinegar, Chile Paste, Minced Garlic, Olive Oil",
     "image":"data/images/10-14216B.jpg",
     "largeImage":"data/images/10-14216A.jpg"
@@ -134,7 +134,7 @@
     "title":"Shrimp Scambi Pasta Meal",
     "category":"main_dishes",
     "price":9.50,
-    "description":"This unique dish combines pasta and shrimp in a significant way with a mixture of cheese and coliander.",
+    "description":"Shrimp Scambi Pasta meal served with garnish and sauces based on customer's choice.",
     "ingredients":"Olive Oil, Peeled Shrimps, Garlic Cloves, Dried Hot Red-Pepper Flakes, White Wine, Salt, Black Pepper, Butter, Capellini, Parsley",
     "image":"data/images/10-14215B.jpg",
     "largeImage":"data/images/10-14215A.jpg"
@@ -144,7 +144,7 @@
     "title":"Spinach and Mozzarella Pasta Meal",
     "category":"main_dishes",
     "price":9.70,
-    "description":"A classic pasta dish that combines spinach and mozzarella in a perfect way.",
+    "description":"Spinache and Mozzarella Pasta meal served with garnish and sauces based on customer's choice.",
     "ingredients":"Olive Oil, Onions, Garlic, Thyme, Pasta, Tomatoes, Mozzarella, Spinach, Salt, Pepper",
     "image":"data/images/10-14217B.jpg",
     "largeImage":"data/images/10-14217A.jpg"
@@ -154,7 +154,7 @@
     "title":"Spaghetti with Smokey Tomato Sauce and Seafood",
     "category":"main_dishes",
     "price":9.70,
-    "description":"Classical Spaghetti dish that consists of a smoked tomato sauce on top and a mixture of seafood.",
+    "description":"Spaghetti with Smokey Tomato Sauce and Seafood meal served with garnish and sauces based on customer's choice.",
     "ingredients":"Garlic Cloves, Pasta, Olive Oil, Peeled Shrimps, Mussels, Baby Squids, Tomato Sauce",
     "image":"data/images/10-15103B.jpg",
     "largeImage":"data/images/10-15103A.jpg"
