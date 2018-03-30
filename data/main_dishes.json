@@ -13,7 +13,7 @@
     "title":"Grilled Pork Steak Meal",
     "category":"main_dishes",
     "price":8.90,
-    "description":"Grilled Pork steak meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Consists of:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Light Soy Sauce.&lt;/li&gt;&lt;li&gt;Vegetable Oil.&lt;/li&gt;&lt;li&gt;Lemon Pepper Seasoning.&lt;/li&gt;&lt;li&gt;Minced Garlic.&lt;/li&gt;&lt;li&gt;Boneless Loin Chops.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "description":"Grilled Pork steak meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ingredients:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Light Soy Sauce&lt;/li&gt;&lt;li&gt;Vegetable Oil&lt;/li&gt;&lt;li&gt;Lemon Pepper Seasoning&lt;/li&gt;&lt;li&gt;Minced Garlic&lt;/li&gt;&lt;li&gt;Boneless Loin Chops&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
     "image":"data/images/10-14154B.jpg",
     "largeImage":"data/images/10-14154A.jpg"
   },
@@ -22,7 +22,7 @@
     "title":"Chicken Souvlaki Meal",
     "category":"main_dishes",
     "price":8.90,
-    "description":"Grilled Chicken Souvlaki meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Consists of:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Olive Oil.&lt;/li&gt;&lt;li&gt;Lemon Juice.&lt;/li&gt;&lt;li&gt;Minced Garlic Cloves.&lt;/li&gt;&lt;li&gt;Dried Oregano.&lt;/li&gt;&lt;li&gt;Salt.&lt;/li&gt;&lt;li&gt;Boneless Chicken breast Halves.&lt;/li&gt;&lt;li&gt;Greek Yogurt.&lt;/li&gt;&lt;li&gt;Cucumber.&lt;/li&gt;&lt;li&gt;White Vinegar.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "description":"Grilled Chicken Souvlaki meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ingredients:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Olive Oil&lt;/li&gt;&lt;li&gt;Lemon Juice&lt;/li&gt;&lt;li&gt;Minced Garlic Cloves&lt;/li&gt;&lt;li&gt;Dried Oregano&lt;/li&gt;&lt;li&gt;Salt.&lt;/li&gt;&lt;li&gt;Boneless Chicken breast Halves&lt;/li&gt;&lt;li&gt;Greek Yogurt&lt;/li&gt;&lt;li&gt;Cucumber&lt;/li&gt;&lt;li&gt;White Vinegar&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
     "image":"data/images/10-14157B.jpg",
     "largeImage":"data/images/10-14157A.jpg"
   },
@@ -31,7 +31,7 @@
     "title":"Pepperoni Pizza",
     "category":"main_dishes",
     "price":9.20,
-    "description":"Pepperoni Pizza meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Consists of:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Pepperoni.&lt;/li&gt;&lt;li&gt;Tomato Sauce.&lt;/li&gt;&lt;li&gt;Parmesan Cheese.&lt;/li&gt;&lt;li&gt;Olive Oil.&lt;/li&gt;&lt;li&gt;Italian Seasoning.&lt;/li&gt;&lt;li&gt;Cornmeal.&lt;/li&gt;&lt;li&gt;Onions.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "description":"Pepperoni Pizza meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ingredients:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Pepperoni&lt;/li&gt;&lt;li&gt;Tomato Sauce&lt;/li&gt;&lt;li&gt;Parmesan Cheese&lt;/li&gt;&lt;li&gt;Olive Oil&lt;/li&gt;&lt;li&gt;Italian Seasoning&lt;/li&gt;&lt;li&gt;Cornmeal&lt;/li&gt;&lt;li&gt;Onions&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
     "image":"data/images/10-15041B.jpg",
     "largeImage":"data/images/10-15041A.jpg"
   },
@@ -40,7 +40,7 @@
     "title":"Margarita Pizza",
     "category":"main_dishes",
     "price":9.20,
-    "description":"Margarita Pizza meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Consists of:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Olive Oil.&lt;/li&gt;&lt;li&gt;Roasted Garlic.&lt;/li&gt;&lt;li&gt;Tomato Sauce.&lt;/li&gt;&lt;li&gt;Mozarella Cheese.&lt;/li&gt;&lt;li&gt;Basil.&lt;/li&gt;&lt;li&gt;Ground Pepper.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "description":"Margarita Pizza meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ingredients:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Olive Oil&lt;/li&gt;&lt;li&gt;Roasted Garlic&lt;/li&gt;&lt;li&gt;Tomato Sauce&lt;/li&gt;&lt;li&gt;Mozarella Cheese&lt;/li&gt;&lt;li&gt;Basil&lt;/li&gt;&lt;li&gt;Ground Pepper&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
     "image":"data/images/10-14133B.jpg",
     "largeImage":"data/images/10-14133A.jpg"
   },
@@ -49,7 +49,7 @@
     "title":"Fried Chicken Salad",
     "category":"main_dishes",
     "price":8.90,
-    "description":"Fried Chicken Salad meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Consists of:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Mayonnaise.&lt;/li&gt;&lt;li&gt;Butter Milk.&lt;/li&gt;&lt;li&gt;Whole Grain Mustard.&lt;/li&gt;&lt;li&gt;Dried Italian Seasoning.&lt;/li&gt;&lt;li&gt;Cayenne.&lt;/li&gt;&lt;li&gt;Lemon Juice.&lt;/li&gt;&lt;li&gt;Fried Chicken Pieces.&lt;/li&gt;&lt;li&gt;Parsley.&lt;/li&gt;&lt;li&gt;Green Onions.&lt;/li&gt;&lt;li&gt;Black Pepper.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "description":"Fried Chicken Salad meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ingredients:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Mayonnaise&lt;/li&gt;&lt;li&gt;Butter Milk&lt;/li&gt;&lt;li&gt;Whole Grain Mustard&lt;/li&gt;&lt;li&gt;Dried Italian Seasoning&lt;/li&gt;&lt;li&gt;Cayenne&lt;/li&gt;&lt;li&gt;Lemon Juice&lt;/li&gt;&lt;li&gt;Fried Chicken Pieces&lt;/li&gt;&lt;li&gt;Parsley&lt;/li&gt;&lt;li&gt;Green Onions&lt;/li&gt;&lt;li&gt;Black Pepper&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
     "image":"data/images/10-14160B.jpg",
     "largeImage":"data/images/10-14160A.jpg"
   },
@@ -58,7 +58,7 @@
     "title":"Salmon Fillet Meal",
     "category":"main_dishes",
     "price":9.40,
-    "description":"Salmon Fillet meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Consists of:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Skinless Salmon Fillet.&lt;/li&gt;&lt;li&gt;Black Pepper.&lt;/li&gt;&lt;li&gt;Olive Oil.&lt;/li&gt;&lt;li&gt;Garlic Cloves.&lt;/li&gt;&lt;li&gt;Lemon Juice.&lt;/li&gt;&lt;li&gt;Butter.&lt;/li&gt;&lt;li&gt;Honey.&lt;/li&gt;&lt;li&gt;Parsley.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "description":"Salmon Fillet meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ingredients:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Skinless Salmon Fillet&lt;/li&gt;&lt;li&gt;Black Pepper&lt;/li&gt;&lt;li&gt;Olive Oil&lt;/li&gt;&lt;li&gt;Garlic Cloves&lt;/li&gt;&lt;li&gt;Lemon Juice&lt;/li&gt;&lt;li&gt;Butter&lt;/li&gt;&lt;li&gt;Honey&lt;/li&gt;&lt;li&gt;Parsley&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
     "image":"data/images/10-14153B.jpg",
     "largeImage":"data/images/10-14153A.jpg"
   },
@@ -67,7 +67,7 @@
     "title":"Lamb Chops Meal",
     "category":"main_dishes",
     "price":9.40,
-    "description":"Lamb Chops meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Consists of:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Crushed Garlic Cloves.&lt;/li&gt;&lt;li&gt;Rosemary Leaves.&lt;/li&gt;&lt;li&gt;Thyme Leaves.&lt;/li&gt;&lt;li&gt;Cayenne Pepper.&lt;/li&gt;&lt;li&gt;Sea Salt.&lt;/li&gt;&lt;li&gt;Olive Oil.&lt;/li&gt;&lt;li&gt;Lamb Chops.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "description":"Lamb Chops meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ingredients:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Crushed Garlic Cloves&lt;/li&gt;&lt;li&gt;Rosemary Leaves&lt;/li&gt;&lt;li&gt;Thyme Leaves&lt;/li&gt;&lt;li&gt;Cayenne Pepper&lt;/li&gt;&lt;li&gt;Sea Salt&lt;/li&gt;&lt;li&gt;Olive Oil&lt;/li&gt;&lt;li&gt;Lamb Chops&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
     "image":"data/images/10-14158B.jpg",
     "largeImage":"data/images/10-14158A.jpg"
   },
@@ -76,7 +76,7 @@
     "title":"Pork Souvlaki Meal",
     "category":"main_dishes",
     "price":9.40,
-    "description":"Pork Souvlaki meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Consists of:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Boneless Pork Loin.&lt;/li&gt;&lt;li&gt;Lemon Juice.&lt;/li&gt;&lt;li&gt;Olive Oil.&lt;/li&gt;&lt;li&gt;Garlic Cloves.&lt;/li&gt;&lt;li&gt;Dried Oregano.&lt;/li&gt;&lt;li&gt;Salt.&lt;/li&gt;&lt;li&gt;Pepper.&lt;/li&gt;&lt;li&gt;Tzatziki.&lt;/li&gt;&lt;li&gt;Greek Pita Bread.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "description":"Pork Souvlaki meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ingredients:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Boneless Pork Loin&lt;/li&gt;&lt;li&gt;Lemon Juice&lt;/li&gt;&lt;li&gt;Olive Oil&lt;/li&gt;&lt;li&gt;Garlic Cloves&lt;/li&gt;&lt;li&gt;Dried Oregano&lt;/li&gt;&lt;li&gt;Salt&lt;/li&gt;&lt;li&gt;Pepper&lt;/li&gt;&lt;li&gt;Tzatziki&lt;/li&gt;&lt;li&gt;Greek Pita Bread&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
     "image":"data/images/10-14152B.jpg",
     "largeImage":"data/images/10-14152A.jpg"
   },
@@ -85,7 +85,7 @@
     "title":"Italian Chicken Wrap Meal",
     "category":"main_dishes",
     "price":8.20,
-    "description":"Italian Chicken Wrap meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Consists of:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;MStir Fry Vegetables.&lt;/li&gt;&lt;li&gt;Grilled Chicken Strips.&lt;/li&gt;&lt;li&gt;Italian Salad Dressing.&lt;/li&gt;&lt;li&gt;Parmesan Cheese.&lt;/li&gt;&lt;li&gt;Tortillas.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "description":"Italian Chicken Wrap meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ingredients:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Stir Fry Vegetables&lt;/li&gt;&lt;li&gt;Grilled Chicken Strips&lt;/li&gt;&lt;li&gt;Italian Salad Dressing&lt;/li&gt;&lt;li&gt;Parmesan Cheese&lt;/li&gt;&lt;li&gt;Tortillas&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
     "image":"data/images/10-14155B.jpg",
     "largeImage":"data/images/10-14155A.jpg"
   },
@@ -94,7 +94,7 @@
     "title":"Spaghetti With Meat Balls Meal",
     "category":"main_dishes",
     "price":9.40,
-    "description":"Spaghetti with Meat Balls meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Consists of:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Ground Beef.&lt;/li&gt;&lt;li&gt;Bread Crumbs.&lt;/li&gt;&lt;li&gt;Parsley.&lt;/li&gt;&lt;li&gt;Parmesan.&lt;/li&gt;&lt;li&gt;Black Pepper.&lt;/li&gt;&lt;li&gt;Garlic Powder.&lt;/li&gt;&lt;li&gt;Eggs.&lt;/li&gt;&lt;li&gt;Tomato Sauce.&lt;/li&gt;&lt;li&gt;Olive Oil.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "description":"Spaghetti with Meat Balls meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ingredients:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Ground Beef&lt;/li&gt;&lt;li&gt;Bread Crumbs&lt;/li&gt;&lt;li&gt;Parsley&lt;/li&gt;&lt;li&gt;Parmesan&lt;/li&gt;&lt;li&gt;Black Pepper&lt;/li&gt;&lt;li&gt;Garlic Powder&lt;/li&gt;&lt;li&gt;Eggs&lt;/li&gt;&lt;li&gt;Tomato Sauce&lt;/li&gt;&lt;li&gt;Olive Oil&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
     "image":"data/images/10-14159B.jpg",
     "largeImage":"data/images/10-14159A.jpg"
   },
@@ -103,7 +103,7 @@
     "title":"Terriyaki Chicken Pizza",
     "category":"main_dishes",
     "price":9.20,
-    "description":"Terriyaki Chicken Pizza meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Consists of:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Prebaked Pizza Crust.&lt;/li&gt;&lt;li&gt;Terriyaki Sauce.&lt;/li&gt;&lt;li&gt;Chopped Chicken Pieces.&lt;/li&gt;&lt;li&gt;Cooked Crumbled Bacon.&lt;/li&gt;&lt;li&gt;Mozarella Cheese.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "description":"Terriyaki Chicken Pizza meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ingredients:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Prebaked Pizza Crust&lt;/li&gt;&lt;li&gt;Terriyaki Sauce&lt;/li&gt;&lt;li&gt;Chopped Chicken Pieces&lt;/li&gt;&lt;li&gt;Cooked Crumbled Bacon&lt;/li&gt;&lt;li&gt;Mozarella Cheese&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
     "image":"data/images/10-14146B.jpg",
     "largeImage":"data/images/10-14146A.jpg"
   },
@@ -112,7 +112,7 @@
     "title":"Chinese Sesame Chicken Meal",
     "category":"main_dishes",
     "price":9.50,
-    "description":"Chinese Sesame Chicken meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Consists of:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Soy Sauce.&lt;/li&gt;&lt;li&gt;Corn Startch.&lt;/li&gt;&lt;li&gt;Dry Sherry.&lt;/li&gt;&lt;li&gt;Vegetable Oil.&lt;/li&gt;&lt;li&gt;Sesame Oil.&lt;/li&gt;&lt;li&gt;Chicken Breast Meat.&lt;/li&gt;&lt;li&gt;Chicken Broth.&lt;/li&gt;&lt;li&gt;White Vinegar.&lt;/li&gt;&lt;li&gt;Chile Paste.&lt;/li&gt;&lt;li&gt;Minced Garlic.&lt;/li&gt;&lt;li&gt;Olive Oil.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "description":"Chinese Sesame Chicken meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ingredients:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Soy Sauce&lt;/li&gt;&lt;li&gt;Corn Startch&lt;/li&gt;&lt;li&gt;Dry Sherry&lt;/li&gt;&lt;li&gt;Vegetable Oil&lt;/li&gt;&lt;li&gt;Sesame Oil&lt;/li&gt;&lt;li&gt;Chicken Breast Meat&lt;/li&gt;&lt;li&gt;Chicken Broth&lt;/li&gt;&lt;li&gt;White Vinegar&lt;/li&gt;&lt;li&gt;Chile Paste&lt;/li&gt;&lt;li&gt;Minced Garlic&lt;/li&gt;&lt;li&gt;Olive Oil&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
     "image":"data/images/10-14216B.jpg",
     "largeImage":"data/images/10-14216A.jpg"
   },
@@ -121,7 +121,7 @@
     "title":"Shrimp Scambi Pasta Meal",
     "category":"main_dishes",
     "price":9.50,
-    "description":"Shrimp Scambi Pasta meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Consists of:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Olive Oil.&lt;/li&gt;&lt;li&gt;Peeled Shrimps.&lt;/li&gt;&lt;li&gt;Garlic Cloves.&lt;/li&gt;&lt;li&gt;Dried Hot Red Pepper Flakes.&lt;/li&gt;&lt;li&gt;White Wine.&lt;/li&gt;&lt;li&gt;Salt.&lt;/li&gt;&lt;li&gt;Black Pepper.&lt;/li&gt;&lt;li&gt;Butter.&lt;/li&gt;&lt;li&gt;Capellini.&lt;/li&gt;&lt;li&gt;Parsley.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "description":"Shrimp Scambi Pasta meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ingredients:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Olive Oil&lt;/li&gt;&lt;li&gt;Peeled Shrimps&lt;/li&gt;&lt;li&gt;Garlic Cloves&lt;/li&gt;&lt;li&gt;Dried Hot Red Pepper Flakes&lt;/li&gt;&lt;li&gt;White Wine&lt;/li&gt;&lt;li&gt;Salt&lt;/li&gt;&lt;li&gt;Black Pepper&lt;/li&gt;&lt;li&gt;Butter&lt;/li&gt;&lt;li&gt;Capellini&lt;/li&gt;&lt;li&gt;Parsley&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
     "image":"data/images/10-14215B.jpg",
     "largeImage":"data/images/10-14215A.jpg"
   },
@@ -130,7 +130,7 @@
     "title":"Spinach and Mozzarella Pasta Meal",
     "category":"main_dishes",
     "price":9.70,
-    "description":"Spinache and Mozzarella Pasta meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Consists of:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Olive Oil.&lt;/li&gt;&lt;li&gt;Onions.&lt;/li&gt;&lt;li&gt;Garlic.&lt;/li&gt;&lt;li&gt;Thyme.&lt;/li&gt;&lt;li&gt;Pasta.&lt;/li&gt;&lt;li&gt;Tomatoes.&lt;/li&gt;&lt;li&gt;Mozzarella.&lt;/li&gt;&lt;li&gt;Spinach.&lt;/li&gt;&lt;li&gt;Salt.&lt;/li&gt;&lt;li&gt;Pepper.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "description":"Spinache and Mozzarella Pasta meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ingredients:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Olive Oil&lt;/li&gt;&lt;li&gt;Onions&lt;/li&gt;&lt;li&gt;Garlic&lt;/li&gt;&lt;li&gt;Thyme&lt;/li&gt;&lt;li&gt;Pasta&lt;/li&gt;&lt;li&gt;Tomatoes&lt;/li&gt;&lt;li&gt;Mozzarella&lt;/li&gt;&lt;li&gt;Spinach&lt;/li&gt;&lt;li&gt;Salt&lt;/li&gt;&lt;li&gt;Pepper&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
     "image":"data/images/10-14217B.jpg",
     "largeImage":"data/images/10-14217A.jpg"
   },
@@ -139,7 +139,7 @@
     "title":"Spaghetti with Smokey Tomato Sauce and Seafood",
     "category":"main_dishes",
     "price":9.70,
-    "description":"Spaghetti with Smokey Tomato Sauce and Seafood meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Consists of:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Garlic Cloves.&lt;/li&gt;&lt;li&gt;Pasta.&lt;/li&gt;&lt;li&gt;Olive Oil.&lt;/li&gt;&lt;li&gt;Peeled Shrimps.&lt;/li&gt;&lt;li&gt;Mussels.&lt;/li&gt;&lt;li&gt;Baby Squids.&lt;/li&gt;&lt;li&gt;Tomato Sauce.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "description":"Spaghetti with Smokey Tomato Sauce and Seafood meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ingredients:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Garlic Cloves&lt;/li&gt;&lt;li&gt;Pasta&lt;/li&gt;&lt;li&gt;Olive Oil&lt;/li&gt;&lt;li&gt;Peeled Shrimps&lt;/li&gt;&lt;li&gt;Mussels&lt;/li&gt;&lt;li&gt;Baby Squids&lt;/li&gt;&lt;li&gt;Tomato Sauce&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
     "image":"data/images/10-15103B.jpg",
     "largeImage":"data/images/10-15103A.jpg"
   }
