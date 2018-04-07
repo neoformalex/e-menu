@@ -60,7 +60,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           </dom-repeat>
         </div>
         <div class="checkout-box">
-          Total:
+          <e-menu-button>
+            <a href="/">Continue Ordering</a>
+          </e-menu-button>
+           Total:
           <span class="subtotal">[[_formatTotal(total)]]</span>
           <e-menu-button responsive>
             <input type="button" on-click="_submit" value="Place Order">

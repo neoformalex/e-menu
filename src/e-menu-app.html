@@ -26,8 +26,24 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
 <!-- Since 'home' is the default route, eagerly load it. -->
 <link rel="import" href="e-menu-home.html">
+<link rel="import" href="/bower_components/login-fire/login-fire.html">
+
 
 <dom-module id="e-menu-app">
+
+  <firebase-app
+    name="emenutest"
+    api-key="AIzaSyDipHRpEPvGfeaNfzQrzra-HeKjxh45IBA"
+    auth-domain="emenutest-55b11.firebaseapp.com"
+    database-url="https://emenutest-55b11.firebaseio.com/">
+  </firebase-app>
+
+  <login-fire
+    app-name="emenutest"
+    providers="google, facebook, twitter, github, anonymous"
+    user="{{user}}"
+    signed-in="{{signedIn}}">
+  </login-fire>
 
   <template>
 
