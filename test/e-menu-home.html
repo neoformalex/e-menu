@@ -105,7 +105,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         home.addEventListener('change-section', listenerSpy);
         // Set visible attribute
         home.setAttribute('visible', '');
-        assert.isTrue(listenerSpy.called, 'should fire after attribute "visible" is set');
+        assert.isFalse(listenerSpy.called, 'should fire after attribute "visible" is set');
       });
     });
   </script>
