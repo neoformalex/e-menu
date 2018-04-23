@@ -1,12 +1,4 @@
-<!--
-@license
-Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
--->
+
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/paper-search/paper-search-bar.html">
@@ -26,6 +18,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
 <!-- Since 'home' is the default route, eagerly load it. -->
 <link rel="import" href="e-menu-home.html">
+
+<!-- FIRST: Include Firebase dependencies -->
+<link rel="import" href="../bower_components/polymerfire/firebase-app-script.html">
+<link rel="import" href="../bower_components/polymerfire/firebase-auth-script.html">
+<link rel="import" href="../bower_components/polymerfire/firebase-database-script.html">
+<link rel="import" href="../bower_components/polymerfire/firebase-app.html">
 
 <dom-module id="e-menu-app">
 
@@ -232,7 +230,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
     </style>
 
-    <e-menu-analytics key="UA-39334307-16"></e-menu-analytics>
+    <e-menu-analytics key="UA-117908691-1"></e-menu-analytics>
+
+
+    <firebase-app 
+      auth-domain="e-menu-373d6.firebaseapp.com" 
+      database-url="https://e-menu-373d6.firebaseio.com" 
+      api-key="AIzaSyC6I7_wRraLQy79cniTSG-IU7nGXH0C7aU"
+      storage-bucket="e-menu-373d6.appspot.com" 
+      messaging-sender-id="249543311268">
+    </firebase-app>
     <!--
       app-location and app-route elements provide the state of the URL for the app.
     -->
@@ -610,7 +617,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       _computePluralizedQuantity(quantity) {
         return quantity + ' ' + (quantity === 1 ? 'item' : 'items');
       }
-
     }
 
     customElements.define(EmenuApp.is, EmenuApp);
