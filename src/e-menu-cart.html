@@ -1,18 +1,13 @@
-<!--
-@license
-Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
--->
-
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
 <link rel="import" href="e-menu-button.html">
 <link rel="import" href="e-menu-common-styles.html">
 <link rel="import" href="e-menu-form-styles.html">
 <link rel="import" href="../bower_components/paper-dialog/paper-dialog.html">
+<link rel="import" href="../bower_components/polymerfire/firebase-auth.html">
+<link rel="import" href="../bower_components/polymerfire/firebase-query.html">
+<link rel="import" href="e-menu-button.html">
+<link rel="import" href="e-menu-cart-item.html">
 
 <dom-module id="e-menu-cart">
 
@@ -33,6 +28,22 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         margin: 0 64px 0 24px;
       }
 
+      .order_placed {
+        font-size: 40px;
+        color:darkblue;
+        padding: 20px;
+      }
+      paper-button {
+        background-color: #F5F5DC; /* Green */
+    border: none;
+    color: #000000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+      }
+
       @media (max-width: 767px) {
 
         .subtotal {
@@ -41,6 +52,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       }
     </style>
+
+  <firebase-auth id="auth" user="{{user}}" provider="google" >
+  </firebase-auth>
+
+    <firebase-query
+      id = "query"
+      path="/orders"
+      data="{{dishes}}"
+    ></firebase-query>
 
     <div class="main-frame">
       <div class="subsection" visible$="[[!_hasItems]]">
@@ -63,21 +83,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           Total:
           <span class="subtotal">[[_formatTotal(total)]]</span>
           <e-menu-button responsive>
+            <input type="button" on-click="_goBack" value="Go Back" style="width:100px; padding-left: 18px; margin-right: 20px;">
+          </e-menu-button>
+          <e-menu-button responsive>
             <input type="button" on-click="_submit" value="Place Order">
           </e-menu-button>
         </div>
       </div>
     </div>
     <paper-dialog id="modal" modal>
-      <dom-repeat items="[[nameArr]]" as="name">
-          <template>
-            <p>[[nameArr]]</p>
-            </br>
-          </template>
-        </dom-repeat>
-      </dom-repeat>
+          <div class="order_placed">The order placed successfully</div>
       <div class="buttons">
-        <paper-button dialog-confirm autofocus>Tap me to close</paper-button>
+        <a href="/"><paper-button dialog-confirm autofocus>Close window</paper-button></a>
       </div>
     </paper-dialog>
   </template>
@@ -114,12 +131,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
           nameArr: Array,
 
-          quantityArr: Array
-        }
+          quantityArr: Array,
+          dishes: {
+                type: Object,
+                //observer: 'dataChanged'
+          },
+        }   
       }
 
       _formatTotal(total) {
-        return isNaN(total) ? '' : '$' + total.toFixed(2);
+        return isNaN(total) ? '' : '€' + total.toFixed(2);
       }
 
       _computeHasItem(cartLength) {
@@ -143,7 +164,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         }
       }
       _submit() {
-        var totalMoney = 0.0;
+        /*var totalMoney = 0.0;
         var allItemsName = [];
         var allItemsQuantity = [];
         var i = 0;
@@ -155,12 +176,43 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         });
         this.nameArr = allItemsName;
         this.quantityArr = allItemsQuantity;
-        this._openDialog();
+        this._openDialog();*/
+        var d = new Date()
+        var jsonDate = d.toJSON()
+        console.log(this.cart);
+        this.cart.forEach(element => {
+          this.$.query.ref.push({
+            title: element.item.title,
+            quantity: element.quantity,
+            description: "Comment",
+            done: false,
+            timeDate: jsonDate
+          });
+          console.log(element.item.title);
+          console.log(element.quantity);
+        });
+        
+        this.$.modal.open();
+        this.dispatchEvent(new CustomEvent('clear-cart', {bubbles: true, composed: true}));
+        /*this.$.auth.signInWithPopup()
+          .then(function(response) {
+            console.log("Authentication successful");
+          })
+          .catch(function(error) {
+            console.log("Authentication unsuccessful");
+        });*/
+      }
+      _add(){
+        
       }
       _openDialog() {
         this.$.modal.open();
       }
 
+      _goBack(){
+        window.history.back();
+      }
+      
     }
 
 
