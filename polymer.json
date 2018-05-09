@@ -5,7 +5,6 @@
     "src/e-menu-list.html",
     "src/e-menu-detail.html",
     "src/e-menu-cart.html",
-    "src/e-menu-checkout.html",
     "src/lazy-resources.html"
   ],
   "sources": [

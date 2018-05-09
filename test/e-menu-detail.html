@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <title>e-menu-detail</title>
@@ -12,54 +13,56 @@
   <link rel="import" href="../src/e-menu-detail.html">
 
 </head>
+
 <body>
 
   <test-fixture id="basic">
     <template>
-       <e-menu-detail></e-menu-detail>
+      <e-menu-detail></e-menu-detail>
     </template>
   </test-fixture>
 
   <script>
-    suite('e-menu-detail tests', function() {
+    suite('e-menu-detail tests', function () {
       var detail;
 
       var item = {
-        name: "Men+s+Tech+Shell+Full-Zip",
-        title: "Men's Tech Shell Full-Zip",
-        category:"mens_outerwear",
-        price: 50.2,
-        description: "A versatile full-zip that you can wear all day long and even to the gym. This technical shell features moisture-wicking fabric, added stretch and a hidden pocket for your smartphone or media player.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Features:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;100% polyester.&lt;/li&gt;&lt;li&gt;Smooth, technical front with textured mesh back.&lt;/li&gt;&lt;li&gt;Drawstring bottom for adjustable fit.&lt;/li&gt;&lt;li&gt;Raglan sleeves.&lt;/li&gt;&lt;li&gt;Available in forest green with the white Google logo embroidered at left chest.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
-        image: "../data/images/10-15068B.jpg",
-        largeImage: "../data/images/10-15068A.jpg"
+        name: "Grilled+Pork+Steak+Meal",
+        title: "Grilled Pork Steak Meal",
+        category: "main_dishes",
+        price: 8.90,
+        description: "Grilled Pork steak meal served with garnish and sauces based on customer's choice.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ingredients:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Light Soy Sauce&lt;/li&gt;&lt;li&gt;Vegetable Oil&lt;/li&gt;&lt;li&gt;Lemon Pepper Seasoning&lt;/li&gt;&lt;li&gt;Minced Garlic&lt;/li&gt;&lt;li&gt;Boneless Loin Chops&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+        image: "../data/images/10-14154B.jpg",
+        largeImage: "../data/images/10-14154A.jpg"
       };
 
-      setup(function() {
+      setup(function () {
         detail = fixture('basic');
       });
 
-      test('title and price should render correctly', function(done) {
+      test('title and price should render correctly', function (done) {
         // Set item property
         detail.item = item;
         // Data bindings will stamp out new DOM asynchronously
         // so wait to check for updates
-        flush(function() {
+        flush(function () {
           // Check title
           var title = detail.shadowRoot.querySelector('h1');
           assert.equal(detail.item.title, title.textContent, 'title should render correctly');
           // Check price
           var price = detail.shadowRoot.querySelector('.price');
-          assert.equal(detail._formatPrice(detail.item.price), price.textContent, 'price should render correctly');
+          assert.equal(detail._formatPrice(detail.item.price), price.textContent,
+            'price should render correctly');
           done();
         });
       });
 
-      test('image should be set', function(done) {
+      test('image should be set', function (done) {
         // Set item property
         detail.item = item;
         // Data bindings will stamp out new DOM asynchronously
         // so wait to check for updates
-        flush(function() {
+        flush(function () {
           var image = detail.shadowRoot.querySelector('e-menu-image');
           assert.equal(item.largeImage, image.src);
           done();
@@ -67,48 +70,52 @@
       });
 
 
-      test('failure should show e-menu-network-warning', function(done) {
+      test('failure should show e-menu-network-warning', function (done) {
         var failureWarning = detail.shadowRoot.querySelector('e-menu-network-warning');
         // Set failure property
         detail.failure = false;
-        flush(function() {
-          assert.equal(getComputedStyle(failureWarning).display, 'none', 'e-menu-network-warning should be hidden when failure is false');
+        flush(function () {
+          assert.equal(getComputedStyle(failureWarning).display, 'none',
+            'e-menu-network-warning should be hidden when failure is false');
           // Set failure property
           detail.failure = true;
           // Data bindings will stamp out new DOM asynchronously
           // so wait to check for updates
-          flush(function() {
-            assert.notEqual(getComputedStyle(failureWarning).display, 'none', 'e-menu-network-warning should not be hidden when failure is true');
+          flush(function () {
+            assert.notEqual(getComputedStyle(failureWarning).display, 'none',
+              'e-menu-network-warning should not be hidden when failure is true');
             done();
           });
         });
       });
 
-      test('failure should hide content', function(done) {
+      test('failure should hide content', function (done) {
         var content = detail.shadowRoot.querySelector('#content');
         // Set failure property
         detail.failure = false;
-        flush(function() {
-          assert.notEqual(getComputedStyle(content).display, 'none', 'content should not be hidden when failure is false');
+        flush(function () {
+          assert.notEqual(getComputedStyle(content).display, 'none',
+            'content should not be hidden when failure is false');
           // Set failure property
           detail.failure = true;
           // Data bindings will stamp out new DOM asynchronously
           // so wait to check for updates
-          flush(function() {
-            assert.equal(getComputedStyle(content).display, 'none', 'content should be hidden when failure is true');
+          flush(function () {
+            assert.equal(getComputedStyle(content).display, 'none',
+              'content should be hidden when failure is true');
             done();
           });
         });
       });
 
-      test('change-section event should fire', function(done) {
+      test('change-section event should fire', function (done) {
         var listenerSpy = sinon.spy();
         detail.addEventListener('change-section', listenerSpy);
         // Set item property
         detail.item = item;
         // Set visible attribute
         detail.setAttribute('visible', '');
-        flush(function() {
+        flush(function () {
           assert.isTrue(listenerSpy.called, 'should fire after attribute "visible" is set');
           done();
         });
@@ -117,4 +124,5 @@
   </script>
 
 </body>
+
 </html>
